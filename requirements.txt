@@ -1,0 +1,4 @@
+# Optional host-side environment for training the six-class YOLO dataset.
+# The STM32 firmware itself has no Python runtime dependency.
+ultralytics>=8.3,<9
+

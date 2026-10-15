@@ -1,0 +1,10 @@
+path: D:/summer10/self-checkout-hal/yolo/prepared6
+train: images/train
+val: images/val
+names:
+  0: apple
+  1: banana
+  2: grapes
+  3: lemon
+  4: tomato
+  5: chili

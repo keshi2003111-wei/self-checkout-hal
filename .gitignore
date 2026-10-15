@@ -1,0 +1,56 @@
+# Keil MDK build products and per-user state
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+MDK-ARM/self-checkout-hal/
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.scvd
+MDK-ARM/*.bak
+MDK-ARM/JLinkLog.txt
+
+# Generic embedded build products
+Debug/
+Release/
+build/
+*.o
+*.obj
+*.d
+*.dep
+*.elf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.crf
+*.lnp
+*.sct
+*.build_log.htm
+*.log
+
+# Local backups
+*.backup_*
+*.bak
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# YOLO datasets, archives, training outputs, and model weights
+yolo/archive.zip
+yolo/prepared6/images/
+yolo/prepared6/labels/
+yolo/runs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,127 @@
+NUC123 
+
+UART: Tx Rx RTS CTS
+
+PC5_Tx0 PC4_Rx0 PB2_RTS0 () PB3_CTS0 ()
+
+ NUC123 
+
+ 
+
+1 GND
+
+2 V33
+
+3 PE
+
+PD11
+
+4 NC
+
+5 NC
+
+6 VH 7 VH
+
+PA12
+
+8 DI
+
+PC3_SPIMOSI00
+
+9 CLK
+
+PC1_SPICLK0
+
+10 GND
+
+11 GND
+
+12 STB6
+
+PC13
+
+13 STB5
+
+PC12
+
+14 STB4
+
+PC11
+
+15 V33
+
+16 GND 17 TM
+
+PD4_ADC4
+
+18 STB3
+
+PC10
+
+19 STB2
+
+PC9
+
+20 STB1
+
+PC8
+
+21 GND
+
+22 GND
+
+23 LATCH
+
+PA13
+
+24 DO
+
+25 VH 26 VH
+
+PA12
+
+27 MA
+
+PF2
+
+28 MA#
+
+29 MB PF3
+30 MB#
+
+
+8.5V  
+
+T-Sensor 
+ 8.5V Step Motor
+
+,PA14_PWM_LED  Step Motor  PD10 
+
+SPI FLASH  NUC123 
+
+CLK PA11_CLK1
+
+DO
+
+PD8_MOSI10
+
+DI
+
+PA10_MISO10
+
+SS
+
+PD9_GPIO_SS
+
+ PC0__KEY1 PA15_KEY2/LED PD5_ADC5  PC2_Drawer
+
+PB0~PB10PB12~PB15  JP1  PD0123 
+
+
+,  USB PTR_Data_Receive() 1> pDataIn  LineData16[] 2> StepIncrease 3> 64 
+Print_Dot() 1> StepIncrease  2>Print_Dot() 48Byte  HeatPaper() 3>HeatPaper() Timer2  4> UpdataPtTime() GetHeatTim()
+PaperRollStart() 1> Timer1Timer1  2> RemainderStep  0PD10 
+ 0 Step motor  2> pStepM_TimLimit  3> ControlWord |= MOTOR_AUTO_SLOW ; 
+ AfterOneStep  EveryStep()
+
+
